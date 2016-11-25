@@ -1,7 +1,6 @@
 ﻿<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
 <title> Manual de HTML </title>
 <h1> Introducción a HTML </h1>
 
@@ -15,13 +14,17 @@
 4. Gran parte de las etiquetas deberán cerrarse con un <b> &lt/elemento&gt;. </b> 
 De no ser así, se trataría de un elemento vacío.<br>
 <hr>
+De momento, en <b>HTML</b> hay una estructura basada en <b>una cabecera y en un cuerpo</b>.<br>
+- La cabecera es para lo referente al documento, sin ser lo que contendrá dentro de éste.<br>
+- El cuerpo es para el contenido que tendrá el documento.
 <h2><u> 1. Cabecera:</h2></u>
 <p> Comenzaremos con la cabecera del documento en sí.<br> 
 Hay que poner para empezar: <b>&lt;head&gt;.</b></p> 
 <h3><u> 1.1. <b>"Títulos"</b>: </h3></u>
-Ésto no va a ser el título que aparecerá en grande, si no lo que aparecerá en la pestaña en la que abriste el documento. <br>
+-Ésto no va a ser el "título grande", si no lo que aparecerá en la pestaña en la que abriste el documento. <br>
 Se introducirán con la etiqueta <b>&lt;title&gt;.</b>.
-
+<h4><u> Ejemplos: </h4></u>
+<b>&lt;title&gt; </b> Título Documento <b>&lt/title&gt; </b>.
 
 <h2><u> 2. Cuerpo: </h2></u>
 
@@ -30,18 +33,104 @@ Antes de ello, deberemos cerrar <b>head</b>: <b>&lt/head&gt</b>
 </head>
 <body>
 <h3><u> 1.1. "Headers": </h3></u>
-<p> Los "header" son para introducir el título, ahora sí, el que se visualizará en el documento y podrá ser grande o pequeño, 
+<p> -Los "headers" son para introducir el título, ahora sí, el que se visualizará en el documento y podrá ser grande o pequeño, 
 deberás poner: &lth1&gt; para el más grande y &lth6&gt; para el más pequeño.</p>
 <h4><u> Ejemplos: </h4></u>
-<h1>  &lth1&gt;  Título 1 &lt/h1&gt; <h1>
-<h2>  &lth2&gt; Título 2 &lt/h2&gt; <h2>
-<h3>  &lth3&gt; Título 3 &lt/h3&gt; &lth3&gt;  <h3>
-<h4>  &lth4&gt; Título 4 &lt/h4&gt; <h4>
-<h5> &lth5&gt;Título 5 &lt/h5&gt; <h5>
-<h6>  &lth6&gt;Título 6 &lt/h6&gt; <h6>
+<h1>  &lth1&gt;  Título 1 &lt/h1&gt; </h1>
+<h2>  &lth2&gt; Título 2 &lt/h2&gt; </h2>
+<h3>  &lth3&gt; Título 3 &lt/h3&gt; &lth3&gt;  </h3>
+<h4>  &lth4&gt; Título 4 &lt/h4&gt; </h4>
+<h5> &lth5&gt;Título 5 &lt/h5&gt; </h5>
+<h6>  &lth6&gt;Título 6 &lt/h6&gt; </h6>
 
-<h3><u> 1.2. Títulos: </h3></u>
+</p><h3><u> 1.2. "Saltos de línea": </h3></u>
+<p> -Los saltos de línea son muy útiles para que en html no te aparezca todo en la misma línea.<br>
+<p>Para ésto, será necesaria la etiqueta <b>&ltbr&gt;</b> para introducir el salto sin necesidad de cerrarse.<br>
+Recordemos que eso significa que es un <b>elemento vacío.</b></p>
 
+<h4><u> Ejemplos: </h4></u>
+Ésto &ltbr&gt;<br>
+Está &ltbr&gt;<br>
+Separado &ltbr&gt;<br>
+Por &ltbr&gt;<br>
+Saltos &ltbr&gt;<br>
+de Línea&ltbr&gt; <br>
+
+<h3><u> 1.3. "Párrafos": </h3></u>
+<p> -Los párrafos son herramientas muy útiles para separar el contenido deseado. </p>
+Para ello, usaremos la etiqueta <b>&ltp&gt; </b> y <b>&lt/p&gt; </b>, para cerrar.
+<p>&ltp&gt; Contenido &lt/p&gt;</p>
+<p>&ltp&gt; Contenido 2 &lt/p&gt;</p>
+<p>&ltp&gt; Contenido 3 &lt/p&gt;</p>
+
+<h3><u> 1.4. "Listas": </h3></u>
+
+- Una lista puede ser ordenada o desordenada. Se explica mejor con ejemplos este apartado:<br>
+<ol>&ltol&gt; Para comenzar la lista ordenada (enumerada)
+
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+
+
+</ol>&lt/ol&gt; Para cerrar la Lista ordenada
+
+<ul>&ltul&gt; Para comenzar la lista desordenada
+
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+<li> &ltli&gt;elemento de la lista &lt/li&gt;
+
+</ul>&lt/ul&gt; Para cerrar la Lista ordenada<br>
+
+- También existen las etiquetas <b> &ltdl&gt; </b> <b> &ltdd&gt; </b> <b> &ltdt&gt; </b> <br>
+Pero lo esencial para las listas, son las etiquetas mencionadas anteriormente.
+
+<h3><u> 1.5. "Hipervínculos": </h3></u>
+- Un hipervínculo sirve principalmente para moverte a otra parte del documento o a otro sitio. <br>
+<b> &lta href="link"&gt; Texto del hipervínculo &lt/a&gt;</b>
+<h4><u> Ejemplos: </h4></u>
+<a href="http://www.google.es"> Con este hipervínculo vas a google </a> 
+
+
+<h3><u> 1.6. "Imágenes": </h3></u>
+- Una imágen puede añadirse con un montón de características que uno quiera<br>
+Como ponerla en un punto del documento y dejarla fija, <br>
+Como establecer un tamaño para ésta <br>
+- No obstante, necesitaremos conocer la dirección dónde se aloja dicha imágen y ponerla.
+<br> <b>&ltimg src="imagen.jpg" alt="Comentario" &gt;</b><br>
+- También puedes establecer el tamaño con &lt;width&gt; y &lt;height&gt;
+<br> <b>&ltimg src="imagen.jpg" alt="Comentario" width=50% height=20% &gt;</b><br>
+<h4><u> Ejemplos: </h4></u> (Con Width 30% y height 20%) <br>
+<img src="http://4everstatic.com/imagenes/674xX/abstractos/fondo-azul,-ondas-156410.jpg" width=30% height=20%>
+
+<h3><u> 1.7. "Tablas": </h3></u>
+- Una tabla tiene varias aplicaciones, como por ejemplo, crear un horario.<br>
+<b>&lttable&gt;<br>
+&lttr&gt; &lt/tr&gt;  Las filas de la tabla.<br>
+&lttd&gt; &lt/td&gt;  Las columnas de la tabla.<br>
+&ltth&gt; &lt/th&gt;  Título de la tabla.<br>
+&ltthead&gt; &lt/thead&gt; Encabezado de la tabla.<br>
+&lttbody&gt; &lt/tbody&gt;  Contenido de la tabla.<br>
+&lt/table&gt;</b>
+- También podemos incluir "bordes" poniendo en la etiqueta <b>&lttable&gt;<br> &lttable border=nº&gt;(recomendado el 1)<br>
+<h4><u> Ejemplos: </h4></u>
+<table border=1>
+<th> Título de la tabla </th>
+<tr> 
+<td> Columna1 </td> <tr> <td> Columna2 </td> </tr>
+</tr>
+<td> Columna3 </td><td> Columna fuera </td> 
+</tr>
+
+
+</table>
+<h3><u> 1.8. "Etiquetas adicionales": </h3></u>
+- Las etiquetas "adicionales" sirven para darle cierto potencial visual al documento. <br>
+Por ejemplo, si queremos resaltar algo en <b>negro</b>, <u>subrayarlo</u>, <s>tacharlo</s>... <br>
+Serán necesarias las etiquetas: <p><b>&ltb&gt; </b> <b>Texto resaltado</b> <b>&lt/b&gt; </b><br>
+<b>&ltu&gt; </b> <u>Texto Subrayado</u> <b>&lt/u&gt; </b><br>
+<b>&lts&gt; </b> <s>Texto Tachado</s> <b>&lt/s&gt; </b></p>
 
 
 
